@@ -75,6 +75,11 @@ int main(){
 				cur_line = (hist.size()-hist_clear_ptr) * (hist.size()-hist_clear_ptr<y) + (y-1) * (hist.size()-hist_clear_ptr>=y);
 				show_hist();
 			}
+			else if(sign==12){
+				cur_line = 0;
+				hist_clear_ptr = hist.size();
+				show_hist();
+			}
 
 		}while(sign!=10 && sign!=4);//ENTER and ^D
 		if(sign==10){
