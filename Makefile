@@ -7,5 +7,5 @@ $(EXE): main.cpp
 run: $(EXE)
 	./$(EXE)
 
-clean: $(EXE)
+clean:
 	rm $(EXE)
