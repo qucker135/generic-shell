@@ -41,8 +41,6 @@ void show_hist(){
 			//printw("\n");
 		}
 	}
-	//cur_line operations
-	
 
 	//move(cur_line,0);
 	printw(">");
@@ -50,6 +48,9 @@ void show_hist(){
 		printw(" ");
 	}
 	move(cur_line,1);*/
+	for(int i=0;i<bfr.length();i++){
+		printw("%c",bfr[i]);
+	}
 	refresh();
 }
 
